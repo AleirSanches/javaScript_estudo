@@ -8,14 +8,43 @@
 <body>
     <script>
        /*funçõies*/
-       var data=[1,2,2,6,7,8];
+       var data=[1,1,3,5,5];
        var total=0;
        for(var i=0; i < data.length ;i++){
            total+=data[i];
        }
        var med= total / data.length;
        console.log("A merdía e "+med);
+
+       total=0;
+       for(var i=0; i < data.length ;i++){
+           var desvition= data[i]-med;
+           total+=desvition*desvition;
+
+       }
+       var stddev = Math.sqrt(total/ ( data.length -1));
+       console.log(stddev);
+
        
+      
+       var even =function(x){
+        if( x%2===0){
+            return x;
+        };
+    };
+
+       console.log("O numero : "+even(2)+ "  e par");
+
+       var eve = function(x){
+        return x%2===0;
+       }
+
+       console.log(eve(2));
+
+       var odd= not(eve);
+       var list1= [1,3,5];
+
+       list1.every(odd);
     </script>
     
 </body>
