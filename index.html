@@ -41,10 +41,31 @@
 
        console.log(eve(2));
 
-       var odd= not(eve);
-       var list1= [1,3,5];
+       function gcd(a,b){
+        var t;
+        if(a<b) {
+            t=b;
+            b=a;
+            a=t;
 
-       list1.every(odd);
+            while(b!=0){
+              t=b;
+              b=a%b;
+              a=t;
+        }
+        }
+        return a;
+       }
+       
+       console.log(gcd(85,187));
+
+       var factorial= function (n){
+          return (n<=1) ? 1 : n* factorial(n-1);
+       }
+
+       console.log(factorial(5));
+
+       
     </script>
     
 </body>
