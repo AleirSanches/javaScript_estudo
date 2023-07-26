@@ -89,6 +89,19 @@
           r.foreach(console.log);
           
           console.log(r.includes(4));
+
+          function typeAndValue(x){
+            if (x === null) return "";
+
+            switch (x.constructor){
+                case Number: return "Number"+x;
+                case String: return"String' "+ x + " '";
+            }
+          
+
+           
+          }
+          console.log(typeAndValue(9));
        
 
        
