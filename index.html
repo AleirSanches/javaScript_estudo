@@ -102,6 +102,18 @@
            
           }
           console.log(typeAndValue(9));
+
+          function type(o){
+            var t,c,n;
+            if (o===undefined) return "null";
+            if (o!==o) return "nan";
+            if ((t= typeof o) !== "object" ) return t;
+
+           
+
+          }
+
+          console.log(type("amor"));
        
 
        
