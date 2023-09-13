@@ -65,3 +65,8 @@ const carro = { marca: "Fiat" ,
                 solta.style.backgroundColor= "black" ;
 
              }
+
+            const adicionaFuncao = new Array("Curitiba, Florianopolis, São Paulo, Porto Alegre");
+            adicionaFuncao.push("Bahia");
+            console.log(adicionaFuncao);
+            
