@@ -7,7 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Iniciar o Chrome em relação a localhost",
+            "name": "ex0001",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }

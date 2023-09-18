@@ -4,7 +4,7 @@ const adicionaFuncao = new Array("Curitiba"," Florianopolis"," São Paulo"," Por
 const idadeComprador = 15;
 const acompanhado = true;
 let passagemComprada = false;
-const destino = "Maceio";
+const destino = " Lages";
 
 const liberadoParaViaajr =idadeComprador >= 18 || acompanhado == true;
 
@@ -20,10 +20,7 @@ while (cont < adicionaFuncao.length){
         break;
         
     }  
-    else  {
-        console.log("Destino não localizado");
-        passagemComprada = false;
-    }
+    
     console.log(adicionaFuncao[cont]);
     cont+=1;  
     }
@@ -35,6 +32,8 @@ while (cont < adicionaFuncao.length){
     else {
         console.log("Nãp permitido o embarque")
     }
+    console.log(cont);
+    console.log("Destino existe", passagemComprada)
    
     
 
