@@ -33,7 +33,7 @@ while (cont < adicionaFuncao.length){
         console.log("Nãp permitido o embarque")
     }
     console.log(cont);
-    console.log("Destino existe", passagemComprada)
+    console.log('Destino existe,', passagemComprada);
    
     
 
